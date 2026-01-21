@@ -8,7 +8,7 @@ API_TOKEN = "8372553738:AAEYX1PYsvU8k1nvT0grTEFuSA9IGauc9mw"
 ADMIN_ID = 1960796624  # O'z ID raqamingizni tekshiring
 
 # 4 ta kanal username'ini kiriting
-CHANNELS = ["@islomiykinolar77", "@kanal2_username", "@kanal3_username", "@kanal4_username"]
+CHANNELS = ["@islomiykinolar77"]
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
