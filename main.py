@@ -7,7 +7,7 @@ from aiogram.filters import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 # --- SOZLAMALAR ---
-API_TOKEN = 8372553738:AAEYX1PYsvU8k1nvT0grTEFuSA9IGauc9mw 
+API_TOKEN = "8372553738:AAEYX1PYsvU8k1nvT0grTEFuSA9IGauc9mw" 
 ADMIN_ID = 1960796624
 CHANNEL_ID = "@islomiykinolar77"
 
