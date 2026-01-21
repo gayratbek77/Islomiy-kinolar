@@ -33,7 +33,7 @@ async def start(message: types.Message):
     db.commit()
     await message.answer(f"Assalomu alaykum! Kino kodini yuboring.")
 
-@dp.message(Command("stat"), F.from_user.id == ADMIN_ID)
+@dp.message(Command("stat"), F.from_user.id ==  "1960796624")
 async def stats(message: types.Message):
     cursor.execute("SELECT COUNT(*) FROM users")
     res = cursor.fetchone()[0]
@@ -51,7 +51,7 @@ async def get_movie(message: types.Message):
     if res: await bot.send_video(message.chat.id, video=res[0], caption=res[1])
     else: await message.answer("Topilmadi.")
 
-@dp.message(F.from_user.id == ADMIN_ID, F.text.startswith("+"))
+@dp.message(F.from_user.id ==  "1960796624", F.text.startswith("+"))
 async def add(message: types.Message):
     d = message.text[1:].split("|")
     cursor.execute("INSERT INTO movies VALUES (?, ?, ?)", (d[0].strip(), d[1].strip(), d[2].strip()))
